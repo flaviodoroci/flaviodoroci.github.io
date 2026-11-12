@@ -20,7 +20,7 @@
 <body>
 <main>
   <h1>Informativa sulla privacy</h1>
-  <p class="muted">Claude Assistant, ultimo aggiornamento: 12 novembre 2026.</p>
+  <p class="muted">Claude Assistant, ultimo aggiornamento: 12 novembre 2026 (aggiunti i conti bancari).</p>
 
   <p>Claude Assistant è un'applicazione per uso strettamente personale: l'unico utente è la
   persona che la gestisce, sul proprio computer.</p>
@@ -30,6 +30,9 @@
     <li>Solo la casella Gmail dell'utente, con il permesso di sola lettura
       (<code>gmail.readonly</code>), dopo il suo consenso esplicito.</li>
     <li>Nessun accesso a contatti, calendario, file o altri servizi Google.</li>
+    <li>I conti bancari dell'utente che lui stesso collega tramite Enable Banking (servizio di
+      informazione sui conti regolato dalla direttiva PSD2): saldi e movimenti, in sola lettura,
+      fino al termine del consenso dato alla banca (al massimo 180 giorni).</li>
   </ul>
 
   <h2>Come li usa</h2>
@@ -37,6 +40,8 @@
     <li>Per cercare e leggere i messaggi in arrivo, riassumerli e ordinarli per priorità
       a beneficio dello stesso utente.</li>
     <li>Non invia, modifica o cancella messaggi e non crea bozze.</li>
+    <li>Per mostrare all'utente saldi e movimenti dei suoi conti e rispondere alle sue domande
+      su di essi. Non dispone pagamenti né modifica i conti.</li>
     <li>I dati non vengono venduti, condivisi con terzi né usati per pubblicità.</li>
   </ul>
 
@@ -54,6 +59,9 @@
   <a href="https://myaccount.google.com/connections">Terze parti con accesso all'account</a>
   del proprio account Google.</p>
 
+  <p>Il consenso ai conti bancari si revoca chiudendo il collegamento dall'applicazione o dalla
+  propria banca; in ogni caso scade da solo alla data indicata al momento del consenso.</p>
+
   <p>L'uso dei dati ricevuti dalle API di Google rispetta le
   <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
   User Data Policy</a>, compresi i requisiti di uso limitato (Limited Use).</p>
@@ -63,7 +71,10 @@
     <p>Claude Assistant is for strictly personal use: its only user is the person who runs it
     on their own computer. With the user's explicit consent it accesses only their Gmail inbox,
     read-only (<code>gmail.readonly</code>), to search, read, summarize and prioritize incoming
-    mail for that same user. It never sends, modifies or deletes messages, and data is never
+    mail for that same user. It never sends, modifies or deletes messages. It can also read, read-only, the balances and
+    transactions of the bank accounts the user personally links through Enable Banking (PSD2
+    account information), for at most the consent period granted to the bank (up to 180 days);
+    it never initiates payments. Data is never
     sold, shared with third parties or used for advertising. Credentials stay in the user's
     macOS Keychain; the triage summary is stored locally and backups are encrypted. Message text
     is processed by Anthropic's Claude model through the user's own account to produce the
