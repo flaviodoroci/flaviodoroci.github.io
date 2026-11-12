@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy - Claude Assistant</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --bg: #ffffff; --muted: #6e6e73; --link: #0066cc; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --bg: #111113; --muted: #a1a1a6; --link: #4da3ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 8vh 16px 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 1rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .5rem; }
+  p, ul { margin: 0 0 1rem; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Informativa sulla privacy</h1>
+  <p class="muted">Claude Assistant, ultimo aggiornamento: 12 novembre 2026.</p>
+
+  <p>Claude Assistant è un'applicazione per uso strettamente personale: l'unico utente è la
+  persona che la gestisce, sul proprio computer.</p>
+
+  <h2>Dati a cui accede</h2>
+  <ul>
+    <li>Solo la casella Gmail dell'utente, con il permesso di sola lettura
+      (<code>gmail.readonly</code>), dopo il suo consenso esplicito.</li>
+    <li>Nessun accesso a contatti, calendario, file o altri servizi Google.</li>
+  </ul>
+
+  <h2>Come li usa</h2>
+  <ul>
+    <li>Per cercare e leggere i messaggi in arrivo, riassumerli e ordinarli per priorità
+      a beneficio dello stesso utente.</li>
+    <li>Non invia, modifica o cancella messaggi e non crea bozze.</li>
+    <li>I dati non vengono venduti, condivisi con terzi né usati per pubblicità.</li>
+  </ul>
+
+  <h2>Dove restano</h2>
+  <ul>
+    <li>Le credenziali di accesso stanno nel Portachiavi di macOS dell'utente.</li>
+    <li>Il riepilogo delle mail classificate è salvato in un archivio locale sul computer
+      dell'utente; le copie di sicurezza sono cifrate.</li>
+    <li>Per produrre i riassunti il testo dei messaggi viene elaborato dal modello Claude di
+      Anthropic, tramite l'account dell'utente.</li>
+  </ul>
+
+  <h2>Revoca</h2>
+  <p>L'utente può revocare l'accesso in qualsiasi momento dalla pagina
+  <a href="https://myaccount.google.com/connections">Terze parti con accesso all'account</a>
+  del proprio account Google.</p>
+
+  <p>L'uso dei dati ricevuti dalle API di Google rispetta le
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, compresi i requisiti di uso limitato (Limited Use).</p>
+
+  <h2 id="en" lang="en">English</h2>
+  <div lang="en" class="muted">
+    <p>Claude Assistant is for strictly personal use: its only user is the person who runs it
+    on their own computer. With the user's explicit consent it accesses only their Gmail inbox,
+    read-only (<code>gmail.readonly</code>), to search, read, summarize and prioritize incoming
+    mail for that same user. It never sends, modifies or deletes messages, and data is never
+    sold, shared with third parties or used for advertising. Credentials stay in the user's
+    macOS Keychain; the triage summary is stored locally and backups are encrypted. Message text
+    is processed by Anthropic's Claude model through the user's own account to produce the
+    summaries. Access can be revoked at any time from
+    <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>.
+    Use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.</p>
+  </div>
+</main>
+</body>
+</html>
