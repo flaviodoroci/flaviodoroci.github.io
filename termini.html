@@ -31,6 +31,8 @@
     <li>Legge in sola lettura la posta Gmail dell'utente, per riassumerla e ordinarla.</li>
     <li>Legge in sola lettura saldi e movimenti dei conti bancari che l'utente collega
       personalmente tramite Enable Banking, entro il consenso dato alla propria banca.</li>
+    <li>Legge in sola lettura i dati dell'auto Tesla dell'utente tramite la Fleet API ufficiale
+      di Tesla; non invia comandi all'auto e non ne legge la posizione.</li>
     <li>Non dispone pagamenti, non invia messaggi e non modifica conti o caselle di posta.</li>
   </ul>
 
@@ -48,7 +50,8 @@
     the person who runs it on their own computer: it is not offered to the public, accepts no
     sign-ups and has no customers. It reads, read-only, the user's Gmail inbox and the balances
     and transactions of the bank accounts the user personally links through Enable Banking,
-    within the consent given to their bank. It never initiates payments, sends messages or
+    within the consent given to their bank, and, read-only, the user's own Tesla vehicle data
+    through Tesla's official Fleet API, without commands or location. It never initiates payments, sends messages or
     modifies accounts or mailboxes. The user runs it at their own risk; information shown comes
     from the linked services and may be incomplete or out of date, and the bank and mail
     provider remain the authoritative source. It provides no financial advice. Data handling is

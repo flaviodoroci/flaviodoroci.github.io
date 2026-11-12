@@ -20,7 +20,7 @@
 <body>
 <main>
   <h1>Informativa sulla privacy</h1>
-  <p class="muted">Claude Assistant, ultimo aggiornamento: 12 novembre 2026 (aggiunti i conti bancari).</p>
+  <p class="muted">Claude Assistant, ultimo aggiornamento: 12 novembre 2026 (aggiunti i conti bancari e l'auto Tesla).</p>
 
   <p>Claude Assistant è un'applicazione per uso strettamente personale: l'unico utente è la
   persona che la gestisce, sul proprio computer.</p>
@@ -33,6 +33,10 @@
     <li>I conti bancari dell'utente che lui stesso collega tramite Enable Banking (servizio di
       informazione sui conti regolato dalla direttiva PSD2): saldi e movimenti, in sola lettura,
       fino al termine del consenso dato alla banca (al massimo 180 giorni).</li>
+    <li>I dati dell'auto Tesla dell'utente, tramite la Fleet API ufficiale di Tesla e dopo il
+      suo consenso: stato della batteria e della ricarica, autonomia, clima, chilometri, stato
+      di chiusura, versione del software e storico delle ricariche ai Supercharger con i costi.
+      Non la posizione dell'auto.</li>
   </ul>
 
   <h2>Come li usa</h2>
@@ -42,6 +46,8 @@
     <li>Non invia, modifica o cancella messaggi e non crea bozze.</li>
     <li>Per mostrare all'utente saldi e movimenti dei suoi conti e rispondere alle sue domande
       su di essi. Non dispone pagamenti né modifica i conti.</li>
+    <li>Per rispondere alle domande dell'utente sulla sua auto. Non invia comandi all'auto
+      (apertura, clima, ricarica o altro) e non la sveglia.</li>
     <li>I dati non vengono venduti, condivisi con terzi né usati per pubblicità.</li>
   </ul>
 
@@ -62,6 +68,9 @@
   <p>Il consenso ai conti bancari si revoca chiudendo il collegamento dall'applicazione o dalla
   propria banca; in ogni caso scade da solo alla data indicata al momento del consenso.</p>
 
+  <p>L'accesso all'auto si revoca dalla sezione delle app di terze parti nelle impostazioni di
+  sicurezza del proprio <a href="https://accounts.tesla.com/">account Tesla</a>.</p>
+
   <p>L'uso dei dati ricevuti dalle API di Google rispetta le
   <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
   User Data Policy</a>, compresi i requisiti di uso limitato (Limited Use).</p>
@@ -74,7 +83,11 @@
     mail for that same user. It never sends, modifies or deletes messages. It can also read, read-only, the balances and
     transactions of the bank accounts the user personally links through Enable Banking (PSD2
     account information), for at most the consent period granted to the bank (up to 180 days);
-    it never initiates payments. Data is never
+    it never initiates payments. Through Tesla's official Fleet API, and with the user's consent,
+    it reads the user's own Tesla vehicle data (battery and charging state, range, climate,
+    odometer, lock state, software version, Supercharger charging history and costs), never the
+    vehicle's location; it never sends commands to the vehicle or wakes it. Tesla access can be
+    revoked from the third-party apps section of the Tesla account security settings. Data is never
     sold, shared with third parties or used for advertising. Credentials stay in the user's
     macOS Keychain; the triage summary is stored locally and backups are encrypted. Message text
     is processed by Anthropic's Claude model through the user's own account to produce the
